@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>파리바게뜨</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="top-banner">banner</div>
     <header>
         <div class="inner">
             <p class="ham-btn"><a href="#"><span></span><span></span><span></span></a></p>
             <h1 class="logo"><a href="#"><img src="./images/imgi_102_Paris_Baguette_logo_BG.gif" alt="파리바게뜨 로고"></a>
             </h1>
-            <ul class="left-main-menu">
+            <ul class="left-main-menu main-menu">
                 <li><a href="#">창업안내</a></li>
                 <li><a href="#">파바 매거진</a></li>
                 <li><a href="#">파바 스토리</a></li>
@@ -34,13 +37,13 @@
                 </li>
             </ul>
             <div class="right-menu">
-                <ul class="right-main-menu">
+                <ul class="right-main-menu main-menu">
                     <li><a href="#">회사 소개</a></li>
                     <li><a href="#">매장 정보</a></li>
                     <li><a href="#">온라인 주문</a></li>
                     <li><a href="#">프로모션</a></li>
                 </ul>
-                <p><a href="#"><i>검색버튼</i></a></p>
+                <p><a href="#"><i class="icon-search2"></i></a></p>
             </div>
         </div>
     </header>
@@ -85,7 +88,7 @@
             <li><a href="#"><img src="./images/main-slider-1.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-2.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-3.jpg" alt=""></a></li>
-            <li><a href="#"><img src="./images/main-slider-4.jpg" alt=""></a></li>
+            <!-- <li><a href="#"><img src="./images/main-slider-4.jpg" alt=""></a></li> -->
             <li><a href="#"><img src="./images/main-slider-5.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-6.jpg" alt=""></a></li>
             <li><a href="#"><img src="./images/main-slider-7.jpg" alt=""></a></li>
@@ -95,15 +98,14 @@
         <section class="promotion-wrap">
             <div class="inner">
                 <h2 class="section-title">PROMOTION</h2>
-                <div class="promotion-list-wrap">
-                    <ul class="promotion-list">
+                <div class="promotion-list-wrap wrap">
+                    <ul class="promotion-list list">
                         <li>
                             <div class="img-box"><a href="#"><img src="./images/promotion-img-1.jpg" alt=""></a></div>
                             <div class="text-box">
                                 <h3>파바 🩷특별한 선물🩷과 함께하세요!</h3>
                                 <p class="read-more"><a href="#">READ MORE</a></p>
                             </div>
-                            <p class="more-btn"><a href="#">SHOW MORE</a></p>
                         </li>
                         <li>
                             <div class="img-box"><a href="#"><img src="./images/promotion-img-2.jpg" alt=""></a></div>
@@ -240,11 +242,11 @@
         <section class="pb-story-wrap">
             <div class="inner">
                 <h2 class="section-title">PB STORY</h2>
-                <div class="pb-story-list-wrap">
-                    <ul class="pb-story-list">
+                <div class="pb-story-list-wrap wrap">
+                    <ul class="pb-story-list list">
                         <!-- li*4>(div.img-box>a[href="#"]>img[src="./images/pb-story-$.jpg"])+div.text-box -->
                         <li>
-                            <div class="img-box"><a href="#"><img src="./images/pb-story-1.jpg" alt=""></a></div>
+                            <div class="img-box"><a href="#"><img src="./images/pb-story-img-1.jpg" alt=""></a></div>
                             <div class="text-box">
                                 <span class="blue-text">BREAD VIDEO</span>
                                 <h3>#베리밤🍓 딸기일까? 케이크일까? 🍰 귀하게 자란 내가 먹어야 할 베리밤❤️ ㅣ#파리바게뜨 #윈터파바 (15s ver.)</h3>
@@ -254,7 +256,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-box"><a href="#"><img src="./images/pb-story-2.jpg" alt=""></a></div>
+                            <div class="img-box"><a href="#"><img src="./images/pb-story-img-2.jpg" alt=""></a></div>
                             <div class="text-box"><span class="blue-text">BREAD VIDEO</span>
                                 <h3>#베리밤🍓 딸기일까? 케이크일까? 🍰 풍성한 달콤함이 터지는 베리밤 BERRY BOMB❤️ ㅣ#파리바게뜨 #윈터파바 (Full ver.)</h3>
                                 <p>딸기일까? 케이크일까? 달콤한 딸기가 듬뿍 ‘베리밤(BERRY BOMB)’이 찾아옵니다🍰 신선한 생딸기와 부드러운 커스터드 크림이 어우러져 한 입 마다
@@ -263,7 +265,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-box"><a href="#"><img src="./images/pb-story-3.jpg" alt=""></a></div>
+                            <div class="img-box"><a href="#"><img src="./images/pb-story-img-3.jpg" alt=""></a></div>
                             <div class="text-box"><span class="blue-text">BREAD VIDEO</span>
                                 <h3>💙파란라벨ㅣ아주 보통날의 케이크, 저당 그릭요거트 케이크ㅣ”파바가 또 해냈지”😆</h3>
                                 <p>#파란라벨 파란라벨 케이크니까, 맛있는데 건강하기까지! 아주 보통날의 케이크 ✔ 특허받은 생(生) 유산균 (홀 : 500억 CFU, 미니&컵 : 100억
@@ -273,7 +275,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="img-box"><a href="#"><img src="./images/pb-story-4.jpg" alt=""></a></div>
+                            <div class="img-box"><a href="#"><img src="./images/pb-story-img-4.jpg" alt=""></a></div>
                             <div class="text-box"><span class="blue-text">BREAD VIDEO</span>
                                 <h3>💙파란라벨 | 아주 보통날의 케이크, 저당 그릭요거트 케이크ㅣ”맛있는데 건강하기까지”🍰</h3>
                                 <p>#파란라벨 파란라벨 케이크니까, 맛있는데 건강하기까지! 아주 보통날의 케이크 ✔ 특허받은 생(生) 유산균 (홀 : 500억 CFU, 미니&컵 : 100억
@@ -325,14 +327,14 @@
         </div>
     </footer>
     <div class="quick-menu-wrap">
-        <p class="top-btn"><a href="#"><i></i>
+        <p class="top-btn"><a href="#"><i class="icon-up-open"></i>
                 <span>TOP</span></a></p>
         <ul class="quick-menu">
-            <li><a href="#"><i></i><span>매장정보</span></a></li>
-            <li><a href="#"><i></i><span>주문정보</span></a></li>
-            <li><a href="#"><i></i><span>창업안내</span></a></li>
-            <li><a href="#"><i></i><span>알바지원</span></a></li>
-            <li><a href="#"><i></i><span>파바앱</span></a></li>
+            <li><a href="#"><i class="icon-map"></i><span>매장정보</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_79_250408_alba_icon.png" alt=""></i><span>주문정보</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_77_02_icon_24x24.gif" alt=""></i><span>창업안내</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_79_250408_alba_icon.png" alt=""></i><span>알바지원</span></a></li>
+            <li><a href="#"><i><img src="./images/imgi_107_mobile-app-2.svg" alt=""></i><span>파바앱</span></a></li>
         </ul>
     </div>
 </body>
