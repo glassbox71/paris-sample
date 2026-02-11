@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: 50px;
+            position: relative;
+            z-index: 10000000;
+        }
+
+        .wrap {
+            height: 50vw;
+            position: relative;
+        }
+
+        .wrap::before,
+        .wrap::after {
+            content: "";
+            display: block;
+            width: 110%;
+            height: 340px;
+            background-color: black;
+            border-radius: 50%/50%;
+            position: absolute;
+            z-index: 1000;
+            left: 50%;
+
+        }
+
+        .wrap::before {
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .wrap::after {
+            bottom: 0;
+            transform: translateX(-50%) translateY(50%);
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 400px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .swiper-slide-prev img {
+            transform: rotateY(10deg) translateX(8%);
+        }
+
+        .swiper-slide-next img {
+            transform: rotateY(-10deg) translateX(-8%);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2 class="title">영화관</h2>
+        <div class="wrap">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/slider-01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-02.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-04.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-05.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-06.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-07.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-08.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-09.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-010.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-011.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/slider-012.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3.5,
+            slideBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            centeredSlides: true
+        });
+    </script>
+</body>
+
+</html>
